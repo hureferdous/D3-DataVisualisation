@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <head>
+       <title> D3 Basic Shape</title>
+       <script src="d3/d3.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+          
+         <script>
+         	var canvas = d3.select("body")
+                          .append("svg")
+                          .attr("width",500) 
+                          .attr("height",500);
+
+             var circle = canvas.append("circle")
+                          .attr("cx",250)
+                          .attr("cy",250)
+                          .attr("r",100) 
+                          .attr("fill","green"); 
+
+             var rect = canvas.append("rect") 
+                        .attr("width",200)
+                        .attr("height",200)
+                        .attr("fill","#ffaa11")
+                         .attr("stroke","black")
+                        .attr("stroke-width",10)
+                        .attr("opacity",.5)
+              
+             var line = canvas.append("line")
+                        .attr("x1",100)
+                        .attr("y1",150) 
+                        .attr("x2",450)
+                        .attr("y2",450)
+                         .attr("stroke","red")
+                        .attr("stroke-width",20)
+                        
+
+
+
+         </script>
+
+    </body>
+
+   
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <head>
+       <title>D3 Scales</title>
+
+       <style>
+
+
+</style>
+       
+       <script src="https://d3js.org/d3.v3.min.js"></script>
+      
+       
+    </head>
+    <body>
+          
+         <script>
+
+                var canvas = d3.select("body")
+                               .append("svg")
+                               .attr("width",500)
+                               .attr("height",500);
+
+                 var circle = canvas.append("circle")
+                                     .attr("cx",100)
+                                     .attr("cy",100)
+                                     .attr("r",20)
+                                      .attr("fill","blue"); 
+
+                  circle.transition()
+                         .duration(2000)
+                         .delay(1000)
+                         .attr("cx",400)
+                         .each("start", function(){d3.select(this).attr("fill","red");});
+                         //.attr("cx",300)
+                        // .transition()
+                        // .attr("cy",200);
+
+                                          
+
+                                        
+                                      
+
+           </script>
+
+    
+
+    </body>
